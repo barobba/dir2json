@@ -4,8 +4,8 @@
 // Driver
 //
 
-if (count($argv) > 2) {
-  folder_array($argv[$argc-1]);
+if (count($argv) >= 2) {
+  print json_encode(folder_array($argv[$argc-1]));
 }
 else {
   print "Usage: dir2json PATH";
